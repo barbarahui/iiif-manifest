@@ -1,0 +1,118 @@
+{
+  // metadata about this manifest file
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://example.org/iiif/1/manifest",
+  "type": "Manifest",
+
+  // Descriptive metadata about the object/work
+  "label": { "en": [ "Announcer" ] },
+  "metadata": [
+    {
+      "label": { "en": [ "creator" ] },
+      "value": { "en": [ "Ramicova, Dunya" ] }
+    },
+    {
+      "label": { "en": [ "title" ] },
+      "value": { "en": [ "Announcer" ] }
+    },
+    {
+      "label": { "en": [ "contributor" ] },
+      "value": { "en": [ "Brecht, Bertolt, 1898-1956.", "Condon, Frank, 1943-" ] }
+    },
+    {
+      "label": { "en": [ "description" ] },
+      "value": { "en": [ "University of California Department of Dramatic Arts" ] }
+    },
+    {
+      "label": { "en": [ "provenance" ] },
+      "value": { "en": [ "Gift of Dunya Ramicova, 2015" ] }
+    },
+    {
+      "label": { "en": [ "relation" ] },
+      "value": { "en": [ "The Resistible Rise of Arturo Ui" ] }
+    },
+    {
+      "label": { "en": [ "extent" ] },
+      "value": { "en": [ "36 x 22 cm" ] }
+    },
+    {
+      "label": { "en": [ "genre" ] },
+      "value": { "en": [ "Drawing" ] }
+    },
+    {
+      "label": { "en": [ "format" ] },
+      "value": { "en": [ "Graphite and color pencils on tracing paper mounted on Bristol Board" ] }
+    },
+    {
+      "label": { "en": [ "identifier" ] },
+      "value": { "en": [ "ark:/86071/d2rw83" ] }
+    },
+    {
+      "label": { "en": [ "type" ] },
+      "value": { "en": [ "image" ] }
+    },
+    {
+      "label": { "en": [ "language" ] },
+      "value": { "en": [ "eng" ] }
+    },
+    {
+      "label": { "en": [ "stateLocatedIn" ] },
+      "value": { "en": [ "California" ] }
+    } 
+  ],
+  // Do we have a summary?
+  // "summary": { "en": [ "This is a summary of the object." ] },
+
+  "thumbnail": [
+    {
+      "id": "http://example.org/1bb84516-c3d7-47d4-b764-685b5d0853c5/full/full/0/default.jpg",
+      "type": "Image"
+      // service??
+    }
+  ],
+
+  "items": [
+    {
+      "id": "https://example.org/iiif/book1/canvas/p1",
+      "type": "Canvas",
+      "label": { "@none": [ "p. 1" ] },
+      "height": 1000,
+      "width": 750,
+      "items": [
+        {
+          "id": "https://example.org/iiif/book1/annopage/p1/a1",
+          "type": "AnnotationPage",
+          "items": [
+            // content included here
+            "@context": [
+              "http://www.w3.org/ns/anno.jsonld",
+              "http://iiif.io/api/presentation/3/context.json"
+            ],
+            "id": "https://example.org/iiif/book1/annotation/p0001-image",
+            "type": "Annotation",
+            "motivation": "painting",
+            "body": {
+              "id": "https://example.org/iiif/book1/res/page1.jpg",
+              "type": "Image",
+              "format": "image/jpeg",
+              "service": [
+                {
+                  "id": "https://example.org/images/book1-page1",
+                  "type": "ImageService3",
+                  "profile": "level2"
+                }
+              ], 
+              "height": 2000,
+              "width": 1500
+            }
+            "target": "https://example.org/iiif/book1/canvas/p1"
+          ]
+        }
+      ]
+    } 
+  ],
+
+}
