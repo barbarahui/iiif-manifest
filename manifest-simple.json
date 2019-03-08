@@ -59,7 +59,7 @@
     {
       "label": { "en": [ "stateLocatedIn" ] },
       "value": { "en": [ "California" ] }
-    } 
+    }
   ],
   "summary": { "en": [ "This is a summary of the object." ] },
 
@@ -82,6 +82,7 @@
           "id": "https://example.org/iiif/book1/annopage/p1/a1",
           "type": "AnnotationPage",
           "items": [
+            {
             "@context": [
               "http://www.w3.org/ns/anno.jsonld",
               "http://iiif.io/api/presentation/3/context.json"
